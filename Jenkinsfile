@@ -6,7 +6,7 @@ pipeline{
     stage("build"){
       steps{
         echo "hello jetkins"
-        sh "docker run -it hello world"
+        sh "pwd"
         sh "make"
       }
     }
