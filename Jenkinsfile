@@ -1,7 +1,7 @@
 pipeline{
   agent{
     docker{
-      image "ubuntu"
+      image "hello"
     }
   }
   stages{
@@ -11,6 +11,7 @@ pipeline{
         sh "python3 --version"
         sh "pwd"
         sh "uname -rv"
+        sh "cat a.txt"
         sh "make"
       }
     }
