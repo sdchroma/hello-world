@@ -11,6 +11,7 @@ pipeline{
       steps{
         sh "python3 --version"
         sh "pwd"
+        sh "uname -rv"
         sh "make"
       }
     }
