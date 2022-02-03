@@ -9,7 +9,7 @@ pipeline{
     stage("build"){
 
       steps{
-        echo "hello jetkins"
+        sh "python3 --version"
         sh "pwd"
         sh "make"
       }
