@@ -12,7 +12,7 @@ pipeline{
         sh "pwd"
         sh "uname -rv"
         sh "ls /"
-        sh "cat a.txt"
+        sh "cat /a.txt"
         sh "make"
       }
     }
