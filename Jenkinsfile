@@ -6,7 +6,7 @@ pipeline{
     stage("build"){
       steps{
         echo "hello jetkins"
-        sh "docker exec -it xenodochial_mahavira pwd"
+        sh "sudo docker run -it hello world"
         sh "make"
       }
     }
