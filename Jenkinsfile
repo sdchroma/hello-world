@@ -6,7 +6,7 @@ pipeline{
     stage("build"){
       steps{
         echo "hello jetkins"
-        sh "uname -a"
+        sh "docker exec -it xenodochial_mahavira pwd"
         sh "make"
       }
     }
