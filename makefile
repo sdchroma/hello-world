@@ -1,2 +1,4 @@
-hello: hello.c
+hello: hello.c run
 	gcc -o hello hello.c
+run:
+	./hello
